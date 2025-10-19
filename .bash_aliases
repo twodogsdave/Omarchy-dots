@@ -42,19 +42,22 @@ alias ambient='mplayer ~/Music/"EPIC AMBIENT.mp3"'
 alias hacker='mplayer ~/Music/"HACKER MUSIC.mp3"'
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 alias myinfo='inxi -Fxxxrza'
-alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
+alias fixsound='systemctl --user restart pulseaudio'
+#alias getkey="wev -event keyboard  | egrep -o 'keycode.*\)'"
 alias periodic='periodic-table-cli'
+alias minecrafty='prime-run minecraft-launcher'
+alias openspadesy='prime-run openspades'
 alias sn="cd ~/.notes && ./sn.sh"
+alias omarchycleaner='curl -fsSL https://raw.githubusercontent.com/maxart/omarchy-cleaner/main/omarchy-cleaner.sh | bash'
 
 
 # Get fastest mirrors in your neighborhood
-alias mirrorbackup='sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak'
+alias mirrorbackup='sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak'
 alias mirrorlist='cat /etc/pacman.d/mirrorlist'
 alias mirror="sudo reflector -f 10 -l 10 --number 10 --verbose --save /etc/pacman.d/mirrorlist" # download speed
 
 #--------------------
 
-# Open terminal app quickly
 alias bt='btop'
 alias ca='cava'
 alias cm='cmatrix -C green -u 9 -b'
@@ -62,16 +65,10 @@ alias f='clear && fastfetch'
 alias ht='htop'
 alias mc='mc'
 alias nc='ncmpcpp'
+alias nv='nvtop'
+alias pm='pulsemixer'
 alias py='pyradio'
 alias tt='tty-clock -c -C 6 -D'
-
-#--------------------
-
-# Git
-alias g='git'
-alias gcm='git commit -m'
-alias gcam='git commit -a -m'
-alias gcad='git commit -a --amend'
 
 #--------------------
 

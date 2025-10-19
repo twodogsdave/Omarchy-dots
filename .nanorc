@@ -1,0 +1,36 @@
+# _ __   __ _ _ __   ___  _ __ ___ 
+#| '_ \ / _` | '_ \ / _ \| '__/ __|
+#| | | | (_| | | | | (_) | | | (__ 
+#|_| |_|\__,_|_| |_|\___/|_|  \___|
+#
+# ~/.nanorc
+
+# An example of a default syntax.  The default syntax is used for
+# files that do not match any other syntax.
+
+syntax "default"
+comment "#"
+
+# Comments.
+color cyan "^[[:space:]]*#.*"
+
+# Spaces in front of tabs.
+color ,red " +	+"
+
+# Email addresses.
+color magenta "<[[:alnum:].%_+-]+@[[:alnum:].-]+\.[[:alpha:]]{2,}>"
+
+set boldtext
+set constantshow
+set linenumbers
+set mouse
+set smarthome
+#set smooth
+set titlecolor black,white
+set statuscolor black,white
+set selectedcolor black,white
+set numbercolor white
+set keycolor brightwhite
+set functioncolor white
+
+set multibuffer

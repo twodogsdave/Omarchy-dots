@@ -1,3 +1,14 @@
+
+#██████╗  █████╗ ███████╗██╗  ██╗██████╗  ██████╗
+#██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗██╔════╝
+#██████╔╝███████║███████╗███████║██████╔╝██║
+#██╔══██╗██╔══██║╚════██║██╔══██║██╔══██╗██║
+#██████╔╝██║  ██║███████║██║  ██║██║  ██║╚██████╗
+#╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+# ~/.bashrc
+
+#--------------------
+
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
@@ -9,9 +20,11 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Use VSCode instead of neovim as your default editor
 # export EDITOR="code"
-#
+# export EDITOR=nano
 # Set a custom prompt with the directory revealed (alternatively use https://starship.rs)
 # PS1="\W \[\e]0;\w\a\]$PS1"
+
+#--------------------
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
